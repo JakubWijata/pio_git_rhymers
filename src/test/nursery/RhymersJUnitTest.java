@@ -1,5 +1,8 @@
-package edu.kis.vh.nursery;
+package nursery;
 
+import edu.kis.vh.nursery.DefaultCountingOutRhymer;
+import edu.kis.vh.nursery.FIFORhymer;
+import edu.kis.vh.nursery.HanoiRhymer;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -75,7 +78,6 @@ public class RhymersJUnitTest {
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
 
-
     @Test
     public void testCountOutFIFORhymer() {
         DefaultCountingOutRhymer rhymer = new FIFORhymer();
@@ -102,4 +104,6 @@ public class RhymersJUnitTest {
         int result = rhymer.peekaboo();
         Assert.assertEquals(testValue, result);
     }
+
+
 }
